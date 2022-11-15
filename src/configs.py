@@ -3,11 +3,9 @@ import logging
 from constants import BASE_DIR
 from logging.handlers import RotatingFileHandler
 
-# Описание формата логов:
-# Время записи – Уровень сообщения – Cообщение.
 LOG_FORMAT = '"%(asctime)s - [%(levelname)s] - %(message)s"'
-# Указываем формат времени.
 DT_FORMAT = '%d.%m.%Y %H:%M:%S'
+
 
 def configure_argument_parser(available_modes):
     parser = argparse.ArgumentParser(description='Парсер документации Python')
